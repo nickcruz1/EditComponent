@@ -8,7 +8,27 @@
   <link rel="styleesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 </head>
 <body>
-  <h1>Edit Component</h1>
+  <div class="container-fluid">
+
+  <div class="row">
+
+    <h2 class="text-center text-primary m-2 fs-2">Edit Component</h2>
+    <hr>
+
+    <div class="d-flex justify-content-center flex-column">
+      <div class="col text-center mb-2 fs-4"><label for="edit">Edit Selection</label></div>
+       <div class="col text-center mb-2 mt-1"><label for="d1">Description 1:</label></div>
+      <div class="col"><input class="editInput d-block m-auto mt-1" type="text"></div>
+      <div class="col text-center mb-2 mt-1 "><label for="d1">Description 2:</label></div>
+      <div class="col"><input class="editInput2 d-block m-auto mt-1" type="password"></div>
+      <div class="col"><button onclick="edit()" class="btn btn-primary d-block m-auto mt-2">Submit Change</button></div>
+    </div>
+    
+    <div id="output" class="text-center mt-2"></div>
+
+  </div>
+
+</div>
   
   
   <script src="index.js"></script>
